@@ -14,9 +14,8 @@ body
 div.contenu
 {
 	background-color: white; 
-	margin: 0px 10% 80px 10%; 
-	padding: 30px;
-	min-width: 350px;
+	margin: 0px 8px 40px 8px; 
+	padding: 0px 8px 20px 8px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
 }
 
@@ -52,6 +51,7 @@ p.categorie
 	margin-bottom: 0px;
 	font-weight: bold;
 	font-size: 16px;
+
 }
 
 div.categorie
@@ -81,12 +81,12 @@ table.tab
 	width: 100%;
 	color: white;
 	background-color: #6C829DC0;
-	height: 80px;
+	height: 50px;
 }
 
 table.tab th
 {
-	font-size: 16px;
+	font-size: 14px;
 	vertical-align: bottom;
 	padding-bottom: 6px;
 }
@@ -94,7 +94,7 @@ table.tab th
 table.tab td
 {
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	vertical-align: top;
 }
 
@@ -110,20 +110,14 @@ table.tab td
 div.colonne
 {
 	margin-top: 20px; 
-	width: 45%;
+	width: 100%;
 
 }
 
 div.colonne1
 {
 	display: inline-block;
-	margin-right: 10%;
 	text-align: center;
-}
-
-div.colonne2
-{
-	float: right;
 }
 
 div.colonne h2
@@ -176,4 +170,64 @@ table.preparation tr
 	height: 60px;
 }
 
+/* Style pour ordinateur */ 
+@media only screen and (min-width: 768px) 
+{
+	div.contenu
+	{
+	
+		min-width: 350px;
+		margin: 0px 10% 80px 10%; 
+		padding: 30px;
+		
+	}
 
+	table.tab
+	{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color: white;
+		background-color: #6C829DC0;
+		height: 80px;
+	}
+
+	table.tab th
+	{
+		font-size: 16px;
+	}
+
+	table.tab td
+	{
+		font-size: 14px;
+	}
+
+	div.colonne
+	{
+		width: 40%;
+
+	}
+
+	div.colonne1
+	{
+		margin-right: 10%;
+	}
+
+	div.colonne2
+	{
+		float: right;
+	}
+
+}
+
+@media only screen and (min-width: 900px) 
+{ 
+	div.contenu
+	{
+	
+		margin-left: auto;
+		margin-right: auto;
+		width: 645px
+		
+	}
+}
